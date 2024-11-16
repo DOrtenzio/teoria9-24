@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: edede9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ex4_1fx.HelloController">
+   <children>
+      <AnchorPane layoutY="50.0" prefHeight="500.0" prefWidth="224.0" style="-fx-background-color: f5ebe0;">
+         <children>
+            <Button fx:id="b1" defaultButton="true" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#nuovoSpettatore" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: d6ccc2; -fx-background-radius: 16;" text="Nuovo spettatore" textFill="#edede9" visible="false">
+               <font>
+                  <Font name="High Tower Text" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" layoutX="14.0" layoutY="265.0" mnemonicParsing="false" onAction="#infoSpettacolo" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: d6ccc2; -fx-background-radius: 16;" text="Info spettacolo" textAlignment="CENTER" textFill="#edede9" visible="false" wrapText="true">
+               <font>
+                  <Font name="High Tower Text" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" layoutX="14.0" layoutY="205.0" mnemonicParsing="false" onAction="#ricercaCosto" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: d6ccc2; -fx-background-radius: 16;" text="Visualizza costo" textFill="#edede9" visible="false">
+               <font>
+                  <Font name="High Tower Text" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" layoutX="14.0" layoutY="145.0" mnemonicParsing="false" onAction="#postiDisponibili" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: d6ccc2; -fx-background-radius: 16;" text="Posti disponibili" textFill="#edede9" visible="false">
+               <font>
+                  <Font name="High Tower Text" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b5" layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#elencoPrenotati" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: d6ccc2; -fx-background-radius: 16;" text="Elenco prenotazioni" textFill="#edede9" visible="false">
+               <font>
+                  <Font name="High Tower Text" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: e3d5ca;">
+         <children>
+            <Label layoutX="147.0" layoutY="5.0" prefHeight="44.0" prefWidth="406.0" text="Teatro Je m'appelle poivre" textFill="#f5ebe0">
+               <font>
+                  <Font name="High Tower Text" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="234.0" layoutY="56.0" opacity="0.86" prefHeight="56.0" prefWidth="455.0" style="-fx-background-color: #f2e7da; -fx-background-radius: 16;">
+         <children>
+            <Label fx:id="titolo" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="14.0" prefHeight="18.0" prefWidth="406.0" text="Inserire il nome dello spettacolo" textFill="#999388">
+               <font>
+                  <Font name="High Tower Text" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="234.0" layoutY="134.0" opacity="0.63" prefHeight="403.0" prefWidth="455.0" style="-fx-background-color: edede9; -fx-background-radius: 16;">
+         <content>
+            <VBox fx:id="rootOperation" prefHeight="398.0" prefWidth="452.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
