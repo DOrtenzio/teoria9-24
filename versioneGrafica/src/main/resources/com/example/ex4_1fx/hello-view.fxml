@@ -52,9 +52,9 @@
             </Label>
          </children>
       </AnchorPane>
-      <ScrollPane layoutX="234.0" layoutY="134.0" opacity="0.63" prefHeight="403.0" prefWidth="455.0" style="-fx-background-color: edede9; -fx-background-radius: 16;">
+      <ScrollPane hvalue="1.0" layoutX="234.0" layoutY="134.0" opacity="0.63" prefHeight="403.0" prefWidth="455.0" style="-fx-background-color: edede9; -fx-background-radius: 16;" vvalue="1.0">
          <content>
-            <VBox fx:id="rootOperation" prefHeight="398.0" prefWidth="452.0" />
+            <VBox fx:id="rootOperation" prefHeight="398.0" prefWidth="452.0" style="-fx-background-color: edede9; -fx-background-radius: 16; -fx-alignment: center;" />
          </content>
       </ScrollPane>
    </children>
